@@ -10,7 +10,7 @@ export default function Header() {
   const links = [{ href: "/", label: "Home" }, { href: "/products", label: "Products" }, { href: "/about", label: "About" }, { href: "/contact", label: "Contact" }];
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-100">
+    <header className="sticky top-0 z-50 bg-white border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center">
