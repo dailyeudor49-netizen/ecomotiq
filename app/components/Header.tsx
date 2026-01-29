@@ -9,6 +9,11 @@ export default function Header() {
   const pathname = usePathname();
   const links = [{ href: "/", label: "Home" }, { href: "/products", label: "Products" }, { href: "/about", label: "About" }, { href: "/contact", label: "Contact" }];
 
+  // Hide header on landing pages (gg-*) and thank you pages (ty-*)
+  if (pathname.startsWith('/gg-') || pathname.startsWith('/ty-')) {
+    return null;
+  }
+
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
