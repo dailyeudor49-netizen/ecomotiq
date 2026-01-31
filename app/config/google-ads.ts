@@ -9,12 +9,17 @@ export interface GoogleAdsCountryConfig {
 }
 
 export const GOOGLE_ADS_BY_COUNTRY: Record<string, GoogleAdsCountryConfig> = {
-  // Spain
-  'es': { conversionId: 'AW-17218323030', conversionLabel: 'WpNhCNv4hu8bENaEq5JA', currency: 'EUR' },
-  // Poland
-  'pl': { conversionId: 'AW-17218323030', conversionLabel: 'BKoRCIrVh-8bENaEq5JA', currency: 'PLN' },
-  // Portugal
-  'pt': { conversionId: 'AW-17218323030', conversionLabel: 'aj9dCP3Lhu8bENaEq5JA', currency: 'EUR' },
+  // IMPORTANT: Keep this empty to avoid double tracking!
+  // The gtag is loaded directly in each landing page's useEffect
+  // and conversions are tracked in each thank you page.
+  // Adding configs here would cause gtag to load TWICE (globally + in landing pages)
+
+  // Spain - tracked in /gg-quickchef-es and /ty-es
+  // 'es': { conversionId: 'AW-17218323030', conversionLabel: 'WpNhCNv4hu8bENaEq5JA', currency: 'EUR' },
+  // Poland - tracked in /gg-quickchef-pl and /ty-pl
+  // 'pl': { conversionId: 'AW-17218323030', conversionLabel: 'BKoRCIrVh-8bENaEq5JA', currency: 'PLN' },
+  // Portugal - tracked in /gg-quickchef-pt and /ty-pt
+  // 'pt': { conversionId: 'AW-17218323030', conversionLabel: 'aj9dCP3Lhu8bENaEq5JA', currency: 'EUR' },
 };
 
 /**
