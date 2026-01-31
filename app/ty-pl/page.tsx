@@ -42,12 +42,18 @@ export default function ThankYouPage() {
     }
 
     if (typeof window !== 'undefined' && !alreadyTracked) {
-      const transactionId = sessionStorage.getItem('orderCode') || Math.floor(100000 + Math.random() * 900000).toString();
-
       // Get Enhanced Conversions data from sessionStorage
       const ecPhone = sessionStorage.getItem('ec_phone') || '';
       const ecAddress = sessionStorage.getItem('ec_address') || '';
       const ecValue = parseFloat(sessionStorage.getItem('ec_value') || '1.0');
+
+      // IMPORTANT: Only track conversion if user came from the form (ec_phone exists)
+      if (!ecPhone) {
+        console.log('⚠️ Skipping Google Ads conversion - user did not complete form (no ec_phone)');
+        return;
+      }
+
+      const transactionId = sessionStorage.getItem('orderCode') || Math.floor(100000 + Math.random() * 900000).toString();
 
       // Load gtag script
       const script = document.createElement('script');

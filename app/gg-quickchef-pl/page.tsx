@@ -770,6 +770,9 @@ const OrderForm: React.FC = () => {
     sessionStorage.removeItem('conversionTracked');
     sessionStorage.removeItem('skipConversion');
 
+    // Get UTM params from URL
+    const urlParams = new URLSearchParams(window.location.search);
+
     // Send data to network API
     try {
       const apiFormData = new FormData();
@@ -778,12 +781,17 @@ const OrderForm: React.FC = () => {
       apiFormData.append('offer', NETWORK_CONFIG.offer);
       apiFormData.append('lp', NETWORK_CONFIG.lp);
       apiFormData.append('name', formData.firstName);
-      apiFormData.append('phone', formData.phone);
-      apiFormData.append('address', formData.fullAddress);
+      apiFormData.append('tel', formData.phone);
+      apiFormData.append('street-address', formData.fullAddress);
       // Add fingerprint if available
       if (typeof window !== 'undefined' && window.tmfp) {
         apiFormData.append('tmfp', window.tmfp);
       }
+      // Add UTM params if present
+      ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'subid', 'subid2', 'subid3', 'subid4', 'pubid'].forEach(param => {
+        const value = urlParams.get(param);
+        if (value) apiFormData.append(param, value);
+      });
 
       const response = await fetch(NETWORK_CONFIG.apiUrl, {
         method: 'POST',
@@ -802,8 +810,8 @@ const OrderForm: React.FC = () => {
       console.error('❌ Network API error (PL):', error);
     }
 
-    // Redirect to thank you page
-    router.push('/ty-pl');
+    // Redirect to thank you page (use window.location for proper sessionStorage handling)
+    window.location.href = '/ty-pl';
   };
 
   if (isSubmitting) {
