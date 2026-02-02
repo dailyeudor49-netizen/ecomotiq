@@ -303,10 +303,10 @@ const Hero: React.FC<{ scrollToForm: () => void }> = ({ scrollToForm }) => {
                -50%
              </div>
              <div className="flex items-center gap-3">
-               <span className="text-gray-400 line-through text-2xl decoration-2">4 398 Kč</span>
-               <span className="text-5xl md:text-6xl font-black text-red-600 tracking-tighter">2 199<span className="text-3xl"> Kč</span></span>
+               <span className="text-gray-400 line-through text-2xl decoration-2">4 888 Kč</span>
+               <span className="text-5xl md:text-6xl font-black text-red-600 tracking-tighter">2 444<span className="text-3xl"> Kč</span></span>
              </div>
-             <p className="text-green-700 font-bold mt-2">Ušetříte 2 199 Kč!</p>
+             <p className="text-green-700 font-bold mt-2">Ušetříte 2 444 Kč!</p>
           </div>
 
           <div className="bg-gray-50 rounded-lg p-4 mb-6 border border-gray-100 text-left space-y-4">
@@ -760,7 +760,7 @@ const OrderForm: React.FC = () => {
     sessionStorage.setItem('ec_name', formData.firstName);
     sessionStorage.setItem('ec_phone', formData.phone);
     sessionStorage.setItem('ec_address', formData.fullAddress);
-    sessionStorage.setItem('ec_value', '2199'); // Price in CZK
+    sessionStorage.setItem('ec_value', '2444'); // Price in CZK
 
     // Generate order code
     const orderCode = Math.floor(100000 + Math.random() * 900000).toString();
@@ -860,9 +860,9 @@ const OrderForm: React.FC = () => {
         <div className="p-5 md:p-8">
           <div className="flex justify-between items-center mb-6 pb-6 border-b border-gray-200 bg-gray-50 p-4 rounded-lg">
             <div>
-              <p className="text-gray-500 line-through text-sm">Katalogová cena: 4 398 Kč</p>
-              <p className="text-red-600 font-bold text-2xl">Celkem: 2 199 Kč</p>
-              <p className="text-green-600 font-semibold text-sm">Ušetříte 2 199 Kč!</p>
+              <p className="text-gray-500 line-through text-sm">Katalogová cena: 4 888 Kč</p>
+              <p className="text-red-600 font-bold text-2xl">Celkem: 2 444 Kč</p>
+              <p className="text-green-600 font-semibold text-sm">Ušetříte 2 444 Kč!</p>
             </div>
             <div className="text-right flex flex-col gap-2">
               <span className="bg-red-600 text-white text-sm font-black px-3 py-1 rounded-lg shadow">-50%</span>
@@ -1099,11 +1099,11 @@ const StickyMobileCTA: React.FC<{ scrollToForm: () => void }> = ({ scrollToForm 
       <div className="flex items-center justify-between px-4 py-3 gap-4">
         <div className="flex flex-col">
           <div className="flex items-center gap-2">
-            <span className="text-xs text-gray-400 line-through">4 398 Kč</span>
+            <span className="text-xs text-gray-400 line-through">4 888 Kč</span>
             <span className="bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded">-50%</span>
           </div>
           <div className="flex items-baseline gap-1">
-            <span className="text-xl font-extrabold text-red-600">2 199 Kč</span>
+            <span className="text-xl font-extrabold text-red-600">2 444 Kč</span>
           </div>
         </div>
 

@@ -42,8 +42,8 @@ const NETWORK_CONFIG = {
   apiUrl: 'https://offers.supertrendaffiliateprogram.com/forms/api/',
   uid: '63',
   key: '7e776a7ae7c90b43ce5b6ec6e7a60e',
-  offer: '206',
-  lp: '206',
+  offer: '207',
+  lp: '207',
 };
 
 // --- TYPES ---
@@ -159,7 +159,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, content }) => {
             onClick={onClose}
             className="px-6 py-2 bg-gray-900 text-white rounded-lg font-bold hover:bg-gray-800 transition-colors"
           >
-            Bezaras
+            Zapri
           </button>
         </div>
       </div>
@@ -173,19 +173,19 @@ const StickyHeader: React.FC = () => {
     <div className="sticky top-0 z-50 w-full bg-red-700 text-white text-xs sm:text-sm font-bold shadow-md">
       <div className="max-w-6xl mx-auto px-2 py-2 flex flex-wrap justify-center items-center gap-x-4 gap-y-1 text-center">
         <div className="flex items-center gap-1">
-          <Truck size={14} /> SZALLITAS 24/48 ORA
+          <Truck size={14} /> DOSTAVA 24/48H
         </div>
         <div className="hidden sm:inline">|</div>
         <div className="flex items-center gap-1 text-yellow-300">
-          <Banknote size={14} /> FIZETES ATVETKOR
+          <Banknote size={14} /> PLACILO OB PREVZEMU
         </div>
         <div className="hidden sm:inline">|</div>
         <div className="flex items-center gap-1">
-          <ShieldCheck size={14} /> 2 EV GARANCIA
+          <ShieldCheck size={14} /> 2 LETI GARANCIJE
         </div>
         <div className="hidden md:inline">|</div>
         <div className="hidden md:flex items-center gap-1">
-          <Phone size={14} /> MAGYAR UGYFELSZOLGALAT
+          <Phone size={14} /> SLOVENSKA PODPORA
         </div>
       </div>
     </div>
@@ -202,15 +202,15 @@ const carouselImages = [
 ];
 
 const benefits = [
-  <span key="1"><strong className="text-red-700">EXKLUZIV UJDONSAG:</strong> Automatikus hozzavalo-adagolas (mindent egyedul csinal)</span>,
-  <span key="2"><strong className="text-gray-900">45 Funkcio 1-ben:</strong> a legteljesebb robot a piacon</span>,
-  <span key="3">Erintokepernyo <strong className="text-gray-900">7&quot; SoftScreen</strong> nagy es jol lathato - lepesrol lepesre vezet</span>,
-  <span key="4">Alkalmazas <strong className="text-gray-900">1000+ recepttel</strong> - valassz es kovesd mint egy oktatoanyagot</span>,
-  <span key="5">Funkcio <strong className="text-gray-900">&quot;Mi van a hutomben?&quot;</strong> - sporolsz a bevasarlason</span>,
-  <span key="6"><strong className="text-gray-900">Beepitett merleg</strong> gramm pontos - vege a &quot;szemre&quot; adagolasnak</span>,
-  <span key="7">Edeny <strong className="text-gray-900">keramia tapadasmentes</strong> - semmi nem eg oda, konnyedén tisztithato</span>,
-  <span key="8">Fozes <strong className="text-gray-900">180°C-ig</strong> + valodi piritas</span>,
-  <span key="9">Rendszer <strong className="text-gray-900">OneClick</strong> - tartozekcsere szetszereles nelkul</span>,
+  <span key="1"><strong className="text-red-700">EKSKLUZIVNA NOVOST:</strong> Avtomatsko dodajanje sestavin (vse naredi sam)</span>,
+  <span key="2"><strong className="text-gray-900">45 Funkcij v 1:</strong> najbolj popoln robot na trgu</span>,
+  <span key="3">Zaslon na dotik <strong className="text-gray-900">7&quot; SoftScreen</strong> velik in pregleden - vodi vas korak za korakom</span>,
+  <span key="4">Aplikacija z <strong className="text-gray-900">1000+ recepti</strong> - izberite in sledite kot vadnici</span>,
+  <span key="5">Funkcija <strong className="text-gray-900">&quot;Kaj imam v hladilniku?&quot;</strong> - prihranite pri nakupih</span>,
+  <span key="6"><strong className="text-gray-900">Vgrajena tehtnica</strong> natancna na gram - konec z odmerjanjem &quot;na oko&quot;</span>,
+  <span key="7">Posoda <strong className="text-gray-900">keramicna nelepljiva</strong> - nic ne zagori, enostavno ciscenje</span>,
+  <span key="8">Kuhanje do <strong className="text-gray-900">180°C</strong> + pravo prazenje</span>,
+  <span key="9">Sistem <strong className="text-gray-900">OneClick</strong> - menjava dodatkov brez razstavljanja</span>,
 ];
 
 const Hero: React.FC<{ scrollToForm: () => void }> = ({ scrollToForm }) => {
@@ -230,21 +230,21 @@ const Hero: React.FC<{ scrollToForm: () => void }> = ({ scrollToForm }) => {
     <section className="bg-white pt-6 pb-12 px-4">
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-4">
-          <span className="text-red-600 block mb-2 text-xl md:text-2xl uppercase tracking-wide">Eleged van az idovesztesbol a konyhaban?</span>
-          Fedezd fel az Elso Robotot ami <span className="bg-yellow-200 px-2">Maga Adja Hozza a Hozzavalokat.</span>
+          <span className="text-red-600 block mb-2 text-xl md:text-2xl uppercase tracking-wide">Ste naveličani izgubljanja časa v kuhinji?</span>
+          Odkrijte prvi robot, ki <span className="bg-yellow-200 px-2">sam dodaja sestavine.</span>
         </h1>
 
         <p className="text-lg md:text-xl text-gray-700 mb-6 max-w-2xl mx-auto leading-relaxed">
-          Felejtsd el a fazekakat es a stresszt. Tedd be mindent az adagoloba, valassz receptet a kepernyorol es <strong className="text-gray-900">o foz helyetted mig te pihensz.</strong>
+          Pozabite na lonce in stres. Vse dajte v dozirnik, izberite recept na zaslonu in <strong className="text-gray-900">on kuha namesto vas, medtem ko vi počivate.</strong>
           <br className="my-2"/>
-          <strong className="text-green-700 bg-green-50 px-3 py-1 rounded inline-block mt-2 border border-green-200 shadow-sm">✅ Tokeletes eredmeny (meg ha nem is tudsz fozni)</strong>
+          <strong className="text-green-700 bg-green-50 px-3 py-1 rounded inline-block mt-2 border border-green-200 shadow-sm">✅ Popoln rezultat (tudi ce ne znate kuhati)</strong>
         </p>
 
         <div className="relative mb-8 rounded-xl overflow-hidden shadow-2xl border-4 border-gray-100 max-w-xl mx-auto group bg-gray-100">
            <div className="relative aspect-square w-full">
              <img
                src={carouselImages[currentSlide]}
-               alt={`Konyhai robot dia ${currentSlide + 1}`}
+               alt={`Kuhinjski robot slika ${currentSlide + 1}`}
                className="w-full h-full object-cover transition-all duration-300"
              />
 
@@ -260,7 +260,7 @@ const Hero: React.FC<{ scrollToForm: () => void }> = ({ scrollToForm }) => {
            </div>
         </div>
 
-        {/* Miniaturas bajo el carrusel */}
+        {/* Sličice pod karuselom */}
         <div className="flex justify-center gap-2 md:gap-3 max-w-xl mx-auto mb-8">
           {carouselImages.map((img, idx) => (
             <button
@@ -270,7 +270,7 @@ const Hero: React.FC<{ scrollToForm: () => void }> = ({ scrollToForm }) => {
             >
               <img
                 src={img}
-                alt={`Miniatura ${idx + 1}`}
+                alt={`Sličica ${idx + 1}`}
                 className="w-full h-full object-cover"
               />
             </button>
@@ -279,7 +279,7 @@ const Hero: React.FC<{ scrollToForm: () => void }> = ({ scrollToForm }) => {
 
         <div className="bg-yellow-50/60 rounded-xl p-6 md:p-8 mb-8 text-left max-w-2xl mx-auto border-2 border-yellow-200 shadow-sm">
             <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 text-center leading-tight">
-              🟡 A robot amivel Sefkent fozhetsz <br className="hidden sm:block"/>piszkos edenyek nelkul
+              🟡 Robot, ki vam omogoca kuhanje kot Šef <br className="hidden sm:block"/>brez umazanih loncev
             </h3>
             <ul className="space-y-4">
               {benefits.map((benefit, index) => (
@@ -295,7 +295,7 @@ const Hero: React.FC<{ scrollToForm: () => void }> = ({ scrollToForm }) => {
 
         <div className="bg-white border-4 border-red-600 p-6 rounded-xl max-w-2xl mx-auto mb-8 relative shadow-xl transform transition-transform hover:scale-[1.01]">
           <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-red-600 text-white px-6 py-2 rounded-full text-sm md:text-base font-bold uppercase tracking-wider shadow-md whitespace-nowrap animate-pulse border-2 border-white">
-            Korlatozott Ajanlat
+            Omejena Ponudba
           </div>
 
           <div className="flex flex-col items-center justify-center mb-6 mt-6">
@@ -303,10 +303,10 @@ const Hero: React.FC<{ scrollToForm: () => void }> = ({ scrollToForm }) => {
                -50%
              </div>
              <div className="flex items-center gap-3">
-               <span className="text-gray-400 line-through text-2xl decoration-2">79 246 Ft</span>
-               <span className="text-5xl md:text-6xl font-black text-red-600 tracking-tighter">39 623<span className="text-3xl"> Ft</span></span>
+               <span className="text-gray-400 line-through text-2xl decoration-2">199,98 €</span>
+               <span className="text-5xl md:text-6xl font-black text-red-600 tracking-tighter">99,99<span className="text-3xl"> €</span></span>
              </div>
-             <p className="text-green-700 font-bold mt-2">Megtakarítasz 39 623 Ft-ot!</p>
+             <p className="text-green-700 font-bold mt-2">Prihranite 99,99 €!</p>
           </div>
 
           <div className="bg-gray-50 rounded-lg p-4 mb-6 border border-gray-100 text-left space-y-4">
@@ -315,8 +315,8 @@ const Hero: React.FC<{ scrollToForm: () => void }> = ({ scrollToForm }) => {
                  <Truck size={24} strokeWidth={2} />
                </div>
                <div>
-                 <p className="font-bold text-gray-900 leading-none text-lg">Gyors Szallitas</p>
-                 <p className="text-sm text-gray-500 mt-1">Garantalt kiszallitas 24/48 oran belul</p>
+                 <p className="font-bold text-gray-900 leading-none text-lg">Hitra Dostava</p>
+                 <p className="text-sm text-gray-500 mt-1">Zagotovljena dostava v 24/48 urah</p>
                </div>
              </div>
 
@@ -325,8 +325,8 @@ const Hero: React.FC<{ scrollToForm: () => void }> = ({ scrollToForm }) => {
                  <Banknote size={24} strokeWidth={2} />
                </div>
                <div>
-                 <p className="font-bold text-gray-900 leading-none text-lg">Fizetes Atvetkor</p>
-                 <p className="text-sm text-gray-500 mt-1">Nincs eloleg, keszpenz a futarnak</p>
+                 <p className="font-bold text-gray-900 leading-none text-lg">Placilo ob Prevzemu</p>
+                 <p className="text-sm text-gray-500 mt-1">Brez predplacila, gotovina kurirju</p>
                </div>
              </div>
 
@@ -335,14 +335,14 @@ const Hero: React.FC<{ scrollToForm: () => void }> = ({ scrollToForm }) => {
                  <ShieldCheck size={24} strokeWidth={2} />
                </div>
                <div>
-                 <p className="font-bold text-gray-900 leading-none text-lg">2 Ev Garancia</p>
-                 <p className="text-sm text-gray-500 mt-1">Technikai tamogatas az arban</p>
+                 <p className="font-bold text-gray-900 leading-none text-lg">2 Leti Garancije</p>
+                 <p className="text-sm text-gray-500 mt-1">Tehnicna podpora vkljucena</p>
                </div>
              </div>
           </div>
 
-          <Button onClick={scrollToForm} fullWidth pulse size="xl" subtext="🔒 Hitelkartya nem szukseges">
-            RENDELD MEG MOST KEDVEZMENYESEN
+          <Button onClick={scrollToForm} fullWidth pulse size="xl" subtext="🔒 Kreditna kartica ni potrebna">
+            NAROCITE ZDAJ S POPUSTOM
           </Button>
         </div>
 
@@ -365,28 +365,28 @@ const SocialProof: React.FC = () => {
           ))}
         </div>
         <h3 className="text-xl font-bold text-gray-800 mb-2">
-          4,8/5 tobb mint 3000 ertekeles alapjan
+          4,8/5 na podlagi vec kot 3000 ocen
         </h3>
         <p className="text-lg text-gray-600 italic mb-6">
-          &quot;Vegre jol fozok orultseg nelkul.&quot;
+          &quot;Koncno dobro kuham brez norosti.&quot;
         </p>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
           <div className="flex flex-col items-center gap-2 p-3 bg-white rounded-lg shadow-sm">
             <ThumbsUp className="text-blue-600" />
-            <span className="font-bold text-gray-700">Egyszeru</span>
+            <span className="font-bold text-gray-700">Enostavno</span>
           </div>
           <div className="flex flex-col items-center gap-2 p-3 bg-white rounded-lg shadow-sm">
             <Clock className="text-green-600" />
-            <span className="font-bold text-gray-700">Gyors</span>
+            <span className="font-bold text-gray-700">Hitro</span>
           </div>
           <div className="flex flex-col items-center gap-2 p-3 bg-white rounded-lg shadow-sm">
             <Zap className="text-yellow-500" />
-            <span className="font-bold text-gray-700">Tapadasmentes</span>
+            <span className="font-bold text-gray-700">Nelepljivo</span>
           </div>
           <div className="flex flex-col items-center gap-2 p-3 bg-white rounded-lg shadow-sm">
             <ChefHat className="text-red-500" />
-            <span className="font-bold text-gray-700">Vezetett Receptek</span>
+            <span className="font-bold text-gray-700">Vodeni Recepti</span>
           </div>
         </div>
       </div>
@@ -401,7 +401,7 @@ const ProblemAgitation: React.FC<{ scrollToForm: () => void }> = ({ scrollToForm
       <div className="max-w-3xl mx-auto">
         <div className="bg-red-50 border border-red-100 rounded-xl p-6 md:p-8 shadow-sm">
           <h2 className="text-2xl md:text-3xl font-bold text-red-700 mb-6 text-center">
-            🔴 Ha felismered ezeket a helyzeteket... <br/>ez a robot megvaltoztatja az eleted.
+            🔴 Ce se prepoznate v teh situacijah... <br/>vam bo ta robot spremenil zivljenje.
           </h2>
 
           <ul className="space-y-5 mb-8">
@@ -409,34 +409,34 @@ const ProblemAgitation: React.FC<{ scrollToForm: () => void }> = ({ scrollToForm
               <div className="bg-red-100 p-1 rounded-full shrink-0 mt-1">
                 <X className="text-red-600" size={22} strokeWidth={3} />
               </div>
-              <span className="text-lg text-gray-800">Kinyitod a hutot es <strong className="text-red-700">nem tudod mit fozz.</strong></span>
+              <span className="text-lg text-gray-800">Odprete hladilnik in <strong className="text-red-700">ne veste kaj skuhati.</strong></span>
             </li>
             <li className="flex items-start gap-3">
               <div className="bg-red-100 p-1 rounded-full shrink-0 mt-1">
                 <X className="text-red-600" size={22} strokeWidth={3} />
               </div>
-              <span className="text-lg text-gray-800">A receptek <strong className="text-red-700">&quot;kozepes&quot;</strong> eredmennyel jarnak es elmegy a kedved.</span>
+              <span className="text-lg text-gray-800">Recepti vam uspejo <strong className="text-red-700">&quot;tako-tako&quot;</strong> in izgubite voljo.</span>
             </li>
             <li className="flex items-start gap-3">
               <div className="bg-red-100 p-1 rounded-full shrink-0 mt-1">
                 <X className="text-red-600" size={22} strokeWidth={3} />
               </div>
-              <span className="text-lg text-gray-800"><strong>Ezer fazekat piszkitasz ossze</strong> es orakig mosogatsz.</span>
+              <span className="text-lg text-gray-800"><strong>Umazete tisoc loncev</strong> in porabite ure za pomivanje.</span>
             </li>
             <li className="flex items-start gap-3">
               <div className="bg-red-100 p-1 rounded-full shrink-0 mt-1">
                 <X className="text-red-600" size={22} strokeWidth={3} />
               </div>
-              <span className="text-lg text-gray-800">Vegul <strong>kajas etelt rendelsz</strong> es tul sokat koltesz.</span>
+              <span className="text-lg text-gray-800">Koncate tako, da si <strong>narocite hitro hrano</strong> in zapravite prevec.</span>
             </li>
           </ul>
 
           <div className="text-center bg-white p-6 rounded-lg border border-gray-100 shadow-md">
             <p className="text-xl font-bold text-green-700 mb-6 leading-tight">
-              ✅ Matol automatikusan egeszseges eteleket fozhetsz,<br/> meg <span className="underline decoration-green-500 decoration-4">tapasztalat nelkul is.</span>
+              ✅ Od zdaj naprej avtomatsko kuhate zdrave obroke,<br/> tudi <span className="underline decoration-green-500 decoration-4">brez izkusenj.</span>
             </p>
             <Button onClick={scrollToForm} variant="primary" size="lg" className="mx-auto">
-              IGEN, KEREM - FIZETEK ATVETKOR
+              DA, ZELIM GA - PLACAM OB PREVZEMU
             </Button>
           </div>
         </div>
@@ -451,36 +451,36 @@ const HowItWorks: React.FC = () => {
     <section className="py-12 px-4 bg-gray-50">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-          Hogyan mukodik?
+          Kako deluje?
         </h2>
-        <p className="text-lg text-gray-600 mb-8">✅ Egyszerubb mint a mikro. <strong className="text-gray-900">Mindent egyedul csinal:</strong></p>
+        <p className="text-lg text-gray-600 mb-8">✅ Enostavnejse kot mikrovalovna. <strong className="text-gray-900">Vse naredi sam:</strong></p>
 
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-xl shadow-md border-b-4 border-green-500 relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-2 bg-green-500"></div>
             <div className="w-12 h-12 bg-green-100 text-green-700 font-bold text-2xl rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-green-200">1</div>
-            <h3 className="font-bold text-xl mb-2">Toltsd Meg az Adagolot</h3>
-            <p className="text-gray-600">Tedd a hozzavalokat a <strong className="text-gray-900">6 rekeszbe</strong>. Nem kell elore lemerni, a merleg megteszi.</p>
+            <h3 className="font-bold text-xl mb-2">Napolnite Dozirnik</h3>
+            <p className="text-gray-600">Vstavite sestavine v <strong className="text-gray-900">6 predalov</strong>. Ni jih treba tehtati, tehtnica to naredi namesto vas.</p>
           </div>
 
           <div className="bg-white p-6 rounded-xl shadow-md border-b-4 border-green-500 relative overflow-hidden">
              <div className="absolute top-0 left-0 w-full h-2 bg-green-500"></div>
             <div className="w-12 h-12 bg-green-100 text-green-700 font-bold text-2xl rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-green-200">2</div>
-            <h3 className="font-bold text-xl mb-2">Valassz Receptet</h3>
-            <p className="text-gray-600">Valassz a <strong className="text-gray-900">7&quot; kepernyorol</strong> vagy az alkalmazasbol 1000+ vezetett etel kozul.</p>
+            <h3 className="font-bold text-xl mb-2">Izberite Recept</h3>
+            <p className="text-gray-600">Izberite iz <strong className="text-gray-900">7&quot; zaslona</strong> ali iz aplikacije med 1000+ vodenimi jedmi.</p>
           </div>
 
           <div className="bg-white p-6 rounded-xl shadow-md border-b-4 border-green-500 relative overflow-hidden">
              <div className="absolute top-0 left-0 w-full h-2 bg-green-500"></div>
             <div className="w-12 h-12 bg-green-100 text-green-700 font-bold text-2xl rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-green-200">3</div>
-            <h3 className="font-bold text-xl mb-2">Nyomj START-ot es Menj El</h3>
-            <p className="text-gray-600">O adagolja a hozzavalokat <strong className="text-gray-900">a megfelelo pillanatban</strong>, foz es kever. Szol amikor kesz!</p>
+            <h3 className="font-bold text-xl mb-2">Pritisnite START in Odidite</h3>
+            <p className="text-gray-600">On dozira sestavine <strong className="text-gray-900">v pravem trenutku</strong>, kuha in mesa. Obvesti vas, ko je koncano!</p>
           </div>
         </div>
 
         <div className="mt-8 bg-blue-50 border border-blue-200 text-blue-900 p-5 rounded-lg inline-block text-base md:text-lg shadow-sm">
-          💡 <span className="font-bold">QUICKSENSE™ TECHNOLOGIA:</span> Az egyetlen robot ami maga adja hozza a hozzavalokat fozes kozben. <br/>
-          <span className="text-sm text-blue-700">Nem kell mellette allnod!</span>
+          💡 <span className="font-bold">TEHNOLOGIJA QUICKSENSE™:</span> Edini robot, ki sam dodaja sestavine med kuhanjem. <br/>
+          <span className="text-sm text-blue-700">Ni vam treba stati ob njem!</span>
         </div>
       </div>
     </section>
@@ -491,38 +491,38 @@ const HowItWorks: React.FC = () => {
 const features: FeatureBox[] = [
   {
     id: 1,
-    title: "Sosem hibazol",
-    description: "Kovesd a kepernyot es a robot mindent kimer. 100%-os garantalt eredmeny.",
+    title: "Nikoli se ne zmotite",
+    description: "Sledite zaslonu in robot vse odmeri. 100% zagotovljen rezultat.",
     imageUrl: "/images/quickchef img/Non sbagli mai.png"
   },
   {
     id: 2,
-    title: "Mindent egyedul csinal",
-    description: "Az automatikus ADAGOLO-nak koszonhetoen nem kell hozzavalokat adnod fozes kozben.",
+    title: "Vse naredi sam",
+    description: "Zahvaljujoc avtomatskemu DOZIRNIKU vam ni treba dodajati sestavin med kuhanjem.",
     imageUrl: "/images/quickchef img/DISPENSER AUTOMATICO.png"
   },
   {
     id: 3,
-    title: "Huto-Urites Funkcio",
-    description: "Ird be az alkalmazasba mi van a hutodben es o megalkotja a tokeletes receptet. Nulla pazarlas.",
+    title: "Funkcija Izprazni-Hladilnik",
+    description: "V aplikacijo napisete, kaj imate v hladilniku, in on ustvari popoln recept. Brez odpadkov.",
     imageUrl: "/images/quickchef img/Funzione Svota-Frigo.png"
   },
   {
     id: 4,
-    title: "Tapadasmentes Keramia",
-    description: "Unique edeny keramia bevonattal: semmi nem tapad es egy mozdulattal tisztithato.",
+    title: "Nelepljiva Keramika",
+    description: "Posoda Unique s keramicno povrsino: nic se ne prilepi in se ocisti z enim potegom.",
     imageUrl: "/images/quickchef img/Ceramica Antiaderente.png"
   },
   {
     id: 5,
-    title: "45 Funkcio 1-ben",
-    description: "Daralas, gyuras, parolás, erjesztes, slow cooking, joghurt... 10 keszuleket helyettesit.",
+    title: "45 Funkcij v 1",
+    description: "Sekljanje, gnetenje, kuhanje na pari, fermentacija, slow cooking, jogurt... nadomesti 10 aparatov.",
     imageUrl: "/images/quickchef img/45 Funzioni in 1.png"
   },
   {
     id: 6,
-    title: "Sefi Eredmenyek",
-    description: "Barsonvos kremek, tokeletes pizza tesztak, sus szoszok. Minden automatikusan.",
+    title: "Rezultati kot od Šefa",
+    description: "Zametne kreme, popolna testa za pico, goste omake. Vse avtomatsko.",
     imageUrl: "/images/quickchef img/Risultati da Chef.png"
   }
 ];
@@ -532,7 +532,7 @@ const FeaturesGrid: React.FC = () => {
     <section className="py-12 px-4 bg-white">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-900">
-          ✅ Miert valasztja mindenki:
+          ✅ Zakaj ga vsi izbirajo:
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -563,31 +563,31 @@ const ComparisonTable: React.FC<{ scrollToForm: () => void }> = ({ scrollToForm 
     <section className="py-12 px-4 bg-gray-50">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-900">
-          🔥 Gyors osszehasonlitas (kertelés nelkul)
+          🔥 Hitra primerjava (brez ovinkov)
         </h2>
 
         <div className="bg-white rounded-xl shadow-xl overflow-hidden border-2 border-gray-100">
           <table className="w-full text-left border-collapse">
             <thead>
               <tr className="bg-gray-100 border-b-2 border-gray-300">
-                <th className="p-4 text-gray-600 font-bold text-sm md:text-base w-1/3 uppercase tracking-wider">Jellemzo</th>
+                <th className="p-4 text-gray-600 font-bold text-sm md:text-base w-1/3 uppercase tracking-wider">Lastnost</th>
                 <th className="p-4 bg-green-50 text-green-800 font-extrabold text-center border-l border-r border-green-200 w-1/3 text-sm md:text-xl shadow-inner">
                   ✅ QuickChef
                 </th>
                 <th className="p-4 text-gray-400 font-medium text-center text-sm md:text-base w-1/3">
-                  ❌ Mas Robotok
+                  ❌ Drugi Roboti
                 </th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
               {[
-                [<span key="1">Automatikus Adagolo <br/><span className="text-xs font-normal text-gray-500">(Maga adja hozza a hozzavalokat)</span></span>, true, "Nincs (Neked kell)"],
-                [<span key="2">Funkciok Szama</span>, "45 (Legteljesebb)", "Kb. 12-20"],
-                [<span key="3">Erintokepernyo</span>, "7\" SoftScreen", "Kicsi vagy Nincs"],
-                [<span key="4">App + Huto-Urites</span>, "Igen (1000+ Recept)", "Keves recept"],
-                [<span key="5">Edeny Anyaga</span>, "Tapadasmentes Keramia", "Acel (Tapad)"],
-                [<span key="6">Urutartalom</span>, "3,3L (Csaladi)", "2,2L (Kicsi)"],
-                [<span key="7">Tisztitas</span>, "Ontisztitas + Mosogatogep", "Kezi mosogatas"],
+                [<span key="1">Avtomatski Dozirnik <br/><span className="text-xs font-normal text-gray-500">(Sam dodaja sestavine)</span></span>, true, "Manjka (Morate sami)"],
+                [<span key="2">Stevilo Funkcij</span>, "45 (Najbolj popoln)", "Pribl. 12-20"],
+                [<span key="3">Zaslon na Dotik</span>, "7\" SoftScreen", "Majhen ali Manjka"],
+                [<span key="4">App + Izprazni-Hladilnik</span>, "Da (1000+ Receptov)", "Malo receptov"],
+                [<span key="5">Material Posode</span>, "Nelepljiva Keramika", "Jeklo (Se prilepi)"],
+                [<span key="6">Prostornina</span>, "3,3L (Druzinski)", "2,2L (Majhen)"],
+                [<span key="7">Ciscenje</span>, "Samociscenje + Pomivalni stroj", "Rocno pomivanje"],
               ].map(([feature, isUs, them], idx) => (
                 <tr key={idx} className={idx % 2 === 0 ? "bg-white" : "bg-gray-50"}>
                   <td className="p-3 md:p-4 font-bold text-gray-800 text-sm md:text-base align-middle">{feature}</td>
@@ -605,7 +605,7 @@ const ComparisonTable: React.FC<{ scrollToForm: () => void }> = ({ scrollToForm 
 
         <div className="mt-8 text-center">
           <Button onClick={scrollToForm} variant="primary" size="lg">
-            RENDELD MEG MOST - FIZESS ATVETKOR
+            NAROCITE ZDAJ - PLACATE OB PREVZEMU
           </Button>
         </div>
       </div>
@@ -621,30 +621,30 @@ const WhatsIncluded: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="w-full md:w-1/2 relative">
              <div className="absolute -top-4 -right-4 bg-yellow-400 text-gray-900 font-bold px-4 py-2 rounded-full shadow-lg z-10 transform rotate-12">
-               TELJES KESZLET
+               KOMPLETNI SET
              </div>
              <div className="aspect-square w-full rounded-xl shadow-2xl border-4 border-white overflow-hidden transform -rotate-2 hover:rotate-0 transition-transform duration-500 bg-white">
                 <img
                   src="/images/quickchef img/1.png"
-                  alt="QuickChef csomag tartalma"
+                  alt="Vsebina paketa QuickChef"
                   className="w-full h-full object-cover"
                 />
              </div>
           </div>
           <div className="w-full md:w-1/2">
             <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-              <Package className="text-blue-600" size={32} /> Mit talalsz a csomagban:
+              <Package className="text-blue-600" size={32} /> Kaj najdete v paketu:
             </h2>
             <ul className="space-y-4">
               {[
-                <span key="1">Robot <strong>QuickChef 45 Funkcio</strong></span>,
-                <span key="2">Edeny <strong>Tapadasmentes Keramia (3,3L)</strong></span>,
-                <span key="3"><strong className="text-blue-700">Automatikus Adagolo</strong> QuickSense™</span>,
-                <span key="4">Tartozek <strong>Saute Lapát</strong> (rizotto/szoszok)</span>,
-                <span key="5">XL Parolo 2 szintes</span>,
-                <span key="6">Vagokeszlet: Pengek, Pillango, Kanal</span>,
-                <span key="7"><strong className="text-green-700">BONUS:</strong> Prémium App 1000+ Recepttel</span>,
-                <span key="8"><strong className="text-gray-900">2 Ev Garancia</strong></span>
+                <span key="1">Robot <strong>QuickChef 45 Funkcij</strong></span>,
+                <span key="2">Posoda <strong>Keramicna Nelepljiva (3,3L)</strong></span>,
+                <span key="3"><strong className="text-blue-700">Avtomatski Dozirnik</strong> QuickSense™</span>,
+                <span key="4">Dodatek <strong>Lopatica Saute</strong> (za rižote/omake)</span>,
+                <span key="5">XL Parnik 2-nadstropni</span>,
+                <span key="6">Set za rezanje: Rezila, Metulj, Zlica</span>,
+                <span key="7"><strong className="text-green-700">BONUS:</strong> Premium Aplikacija z 1000+ Recepti</span>,
+                <span key="8"><strong className="text-gray-900">2 Leti Garancije</strong></span>
               ].map((item, idx) => (
                 <li key={idx} className="flex items-start gap-3 text-lg text-gray-800 border-b border-blue-100 pb-2 last:border-0">
                   <CheckCircle className="text-green-500 shrink-0 mt-1" size={22} fill="currentColor" />
@@ -659,8 +659,8 @@ const WhatsIncluded: React.FC = () => {
                       <Truck size={24} />
                   </div>
                   <div>
-                      <p className="text-xs text-gray-500 font-bold uppercase tracking-wide">Szallitas</p>
-                      <p className="font-bold text-gray-900 text-lg leading-none mt-1">Gyors 24/48h</p>
+                      <p className="text-xs text-gray-500 font-bold uppercase tracking-wide">Dostava</p>
+                      <p className="font-bold text-gray-900 text-lg leading-none mt-1">Hitra 24/48h</p>
                   </div>
               </div>
 
@@ -669,8 +669,8 @@ const WhatsIncluded: React.FC = () => {
                       <Banknote size={24} />
                   </div>
                   <div>
-                      <p className="text-xs text-gray-500 font-bold uppercase tracking-wide">Fizetes</p>
-                      <p className="font-bold text-gray-900 text-lg leading-none mt-1">Atvetkor</p>
+                      <p className="text-xs text-gray-500 font-bold uppercase tracking-wide">Placilo</p>
+                      <p className="font-bold text-gray-900 text-lg leading-none mt-1">Ob Prevzemu</p>
                   </div>
               </div>
             </div>
@@ -683,12 +683,12 @@ const WhatsIncluded: React.FC = () => {
 
 // 11. Reviews Component
 const reviewsList: Review[] = [
-  { id: 1, name: "Maria", age: 57, location: "Budapest", stars: 5, text: "Sosem voltam jo a konyhaban... ezzel minden sikerul. A kepernyo megmondja mit kell tenni, szuper kenyelmes.", imageUrl: "/images/quickchef img/recensione 1.jpg" },
-  { id: 2, name: "Istvan", age: 63, location: "Debrecen", stars: 5, text: "A fozes fárasztó lett. Most beteszek mindent es o csinalja. A tisztitas sokkal egyszerubb.", imageUrl: "/images/quickchef img/recensione 2.jpg" },
-  { id: 3, name: "Eva", age: 41, location: "Szeged", stars: 5, text: "Dolgozom es nincs időm. Ez menti meg az esteimet. Meg a tesztak es szoszok is tokeletesek.", imageUrl: "/images/quickchef img/recensione 3.jpg" },
-  { id: 4, name: "Peter", age: 52, location: "Pecs", stars: 5, text: "A beepitett merleg szuper, vegre nem tevesztem el az adagokat... korabban a receptek fele a kukaban vegezle." },
-  { id: 5, name: "Anna", age: 60, location: "Gyor", stars: 5, text: "Az edeny nem tapad, ez gyozott meg. Korabban allandoan kaparnom kellett." },
-  { id: 6, name: "Zsofia", age: 35, location: "Miskolc", stars: 5, text: "A receptes alkalmazas nagyon hasznos... es a 'mi van a hutomben' funkcio zsenialis, nem pazarlok etelt." }
+  { id: 1, name: "Marija", age: 57, location: "Ljubljana", stars: 5, text: "Nikoli nisem bila dobra v kuhinji... s tem mi vse uspe. Zaslon pove kaj narediti, zelo udobno.", imageUrl: "/images/quickchef img/recensione 1.jpg" },
+  { id: 2, name: "Janez", age: 63, location: "Maribor", stars: 5, text: "Kuhanje je postalo naporno. Zdaj vse dam notri in on naredi. Ciscenje veliko enostavnejse.", imageUrl: "/images/quickchef img/recensione 2.jpg" },
+  { id: 3, name: "Eva", age: 41, location: "Celje", stars: 5, text: "Delam in nimam casa. To mi resuje vecere. Tudi testa in omake uspejo popolno.", imageUrl: "/images/quickchef img/recensione 3.jpg" },
+  { id: 4, name: "Peter", age: 52, location: "Kranj", stars: 5, text: "Vgrajena tehtnica super, koncno se ne zmotim pri odmerkah... prej je polovica receptov koncala v kosih." },
+  { id: 5, name: "Ana", age: 60, location: "Koper", stars: 5, text: "Posoda se ne prilepi, to me je prepricalo. Prej sem morala stalno strgati." },
+  { id: 6, name: "Zala", age: 35, location: "Novo mesto", stars: 5, text: "Aplikacija z recepti zelo uporabna... in funkcija 'kaj imam v hladilniku' je genialna, ne zapravljam hrane." }
 ];
 
 const Reviews: React.FC = () => {
@@ -696,7 +696,7 @@ const Reviews: React.FC = () => {
     <section className="py-12 px-4 bg-white border-t border-gray-200">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
-          ⭐ Valos vasarloi velemenyek
+          ⭐ Prave ocene strank
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -706,7 +706,7 @@ const Reviews: React.FC = () => {
                 <div className="aspect-video w-full overflow-hidden">
                   <img
                     src={review.imageUrl}
-                    alt={`Ertekeles ${review.name} altal`}
+                    alt={`Ocena od ${review.name}`}
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -714,7 +714,7 @@ const Reviews: React.FC = () => {
               <div className="p-6">
                 <div className="flex justify-between items-start mb-3">
                   <div>
-                    <h4 className="font-bold text-gray-900">{review.name}, {review.age} eves</h4>
+                    <h4 className="font-bold text-gray-900">{review.name}, {review.age} let</h4>
                     <div className="flex items-center text-gray-500 text-xs mt-1">
                       <MapPin size={12} className="mr-1" /> {review.location}
                     </div>
@@ -727,7 +727,7 @@ const Reviews: React.FC = () => {
                 </div>
                 <p className="text-gray-700 italic">&quot;{review.text}&quot;</p>
                 <div className="mt-4 flex items-center gap-2 text-green-700 text-xs font-bold uppercase">
-                  <span className="w-2 h-2 bg-green-500 rounded-full"></span> Ellenorzott Vasarlas
+                  <span className="w-2 h-2 bg-green-500 rounded-full"></span> Preverjen Nakup
                 </div>
               </div>
             </div>
@@ -760,7 +760,7 @@ const OrderForm: React.FC = () => {
     sessionStorage.setItem('ec_name', formData.firstName);
     sessionStorage.setItem('ec_phone', formData.phone);
     sessionStorage.setItem('ec_address', formData.fullAddress);
-    sessionStorage.setItem('ec_value', '39623'); // Price in HUF
+    sessionStorage.setItem('ec_value', '99.99'); // Price in EUR
 
     // Generate order code
     const orderCode = Math.floor(100000 + Math.random() * 900000).toString();
@@ -792,13 +792,13 @@ const OrderForm: React.FC = () => {
 
       const responseText = await response.text();
       sessionStorage.setItem('networkResponse', responseText);
-      console.log('✅ Network API response (HU):', responseText);
+      console.log('✅ Network API response (SL):', responseText);
     } catch (error) {
-      console.error('❌ Network API error (HU):', error);
+      console.error('❌ Network API error (SL):', error);
     }
 
     // Redirect to thank you page
-    router.push('/ty/hu');
+    router.push('/ty/sl');
   };
 
   if (isSubmitting) {
@@ -807,7 +807,7 @@ const OrderForm: React.FC = () => {
         <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 animate-spin">
           <div className="w-12 h-12 border-4 border-green-600 border-t-transparent rounded-full"></div>
         </div>
-        <h2 className="text-2xl font-bold text-green-800 mb-4">Rendelés feldolgozása...</h2>
+        <h2 className="text-2xl font-bold text-green-800 mb-4">Obdelava narocila...</h2>
       </div>
     );
   }
@@ -820,17 +820,17 @@ const OrderForm: React.FC = () => {
         <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 animate-bounce">
           <ShieldCheck size={48} className="text-green-600" />
         </div>
-        <h2 className="text-3xl font-bold text-green-800 mb-4">Koszonjuk a rendelest!</h2>
+        <h2 className="text-3xl font-bold text-green-800 mb-4">Hvala za narocilo!</h2>
         <p className="text-xl text-gray-700 mb-6">
-          Munkatarsunk hamarosan felhivja a <strong className="whitespace-nowrap">{formData.phone}</strong> szamon a szallitas megerositesere.
+          Nas sodelavec vas bo kmalu poklical na stevilko <strong className="whitespace-nowrap">{formData.phone}</strong> za potrditev dostave.
         </p>
         <div className="bg-white p-4 rounded-lg border border-gray-200 inline-block text-left">
-          <p className="font-bold text-gray-800 mb-1">Mi tortenik most?</p>
+          <p className="font-bold text-gray-800 mb-1">Kaj se zdaj dogaja?</p>
           <ol className="list-decimal list-inside text-gray-600 space-y-1">
-            <li>A rendeleset rogzitettuk.</li>
-            <li>Megerosito hivast kapsz (magyar szam).</li>
-            <li>A futar 24/48 oran belul kiszallitja.</li>
-            <li>Keszpenzzel fizetsz atvetelekor.</li>
+            <li>Vase narocilo je bilo registrirano.</li>
+            <li>Prejeli boste potrditveni klic (slovenska stevilka).</li>
+            <li>Kurir dostavi v 24/48h.</li>
+            <li>Placate z gotovino ob prevzemu.</li>
           </ol>
         </div>
       </div>
@@ -852,41 +852,41 @@ const OrderForm: React.FC = () => {
         <div className="bg-red-600 p-6 text-center text-white relative overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-full bg-white opacity-10 transform -skew-x-12"></div>
           <h2 className="text-2xl md:text-3xl font-extrabold mb-2 uppercase relative z-10">
-            Rendelesi Urlap
+            Obrazec za Narocilo
           </h2>
-          <p className="font-medium opacity-90 relative z-10">Toltsd ki az 50% kedvezmenyert</p>
+          <p className="font-medium opacity-90 relative z-10">Izpolnite za 50% popust</p>
         </div>
 
         <div className="p-5 md:p-8">
           <div className="flex justify-between items-center mb-6 pb-6 border-b border-gray-200 bg-gray-50 p-4 rounded-lg">
             <div>
-              <p className="text-gray-500 line-through text-sm">Listaár: 79 246 Ft</p>
-              <p className="text-red-600 font-bold text-2xl">Összesen: 39 623 Ft</p>
-              <p className="text-green-600 font-semibold text-sm">Megtakarítasz 39 623 Ft-ot!</p>
+              <p className="text-gray-500 line-through text-sm">Kataloska cena: 199,98 €</p>
+              <p className="text-red-600 font-bold text-2xl">Skupaj: 99,99 €</p>
+              <p className="text-green-600 font-semibold text-sm">Prihranite 99,99 €!</p>
             </div>
             <div className="text-right flex flex-col gap-2">
               <span className="bg-red-600 text-white text-sm font-black px-3 py-1 rounded-lg shadow">-50%</span>
-              <span className="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded border border-blue-200">GYORS SZALLITAS</span>
+              <span className="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded border border-blue-200">HITRA DOSTAVA</span>
             </div>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>
-              <label className="block text-gray-700 font-bold mb-1 text-sm uppercase tracking-wide">Nev *</label>
+              <label className="block text-gray-700 font-bold mb-1 text-sm uppercase tracking-wide">Ime in Priimek *</label>
               <input
                 type="text"
                 name="firstName"
                 required
                 autoComplete="name"
                 className="w-full p-4 border-2 border-gray-300 rounded-lg focus:border-green-500 focus:ring-green-500 outline-none transition-colors text-lg"
-                placeholder="Pl: Kovacs Janos"
+                placeholder="Npr: Janez Novak"
                 value={formData.firstName}
                 onChange={handleChange}
               />
             </div>
 
             <div>
-              <label className="block text-gray-700 font-bold mb-1 text-sm uppercase tracking-wide">Telefon (Mobil) *</label>
+              <label className="block text-gray-700 font-bold mb-1 text-sm uppercase tracking-wide">Telefon (Mobilni) *</label>
               <input
                 type="tel"
                 name="phone"
@@ -895,23 +895,23 @@ const OrderForm: React.FC = () => {
                 inputMode="numeric"
                 pattern="[0-9]*"
                 className="w-full p-4 border-2 border-gray-300 rounded-lg focus:border-green-500 focus:ring-green-500 outline-none transition-colors text-lg"
-                placeholder="Pl: 06 30 123 4567"
+                placeholder="Npr: 040 123 456"
                 value={formData.phone}
                 onChange={handleChange}
               />
               <p className="text-xs text-gray-500 mt-1 flex items-center gap-1">
-                <ShieldCheck size={12}/> Fontos a szallitas megerositésehez
+                <ShieldCheck size={12}/> Pomembno za potrditev dostave
               </p>
             </div>
 
             <div>
-              <label className="block text-gray-700 font-bold mb-1 text-sm uppercase tracking-wide">Teljes Cim (Utca, Hazszam, Varos, Iranyitoszam) *</label>
+              <label className="block text-gray-700 font-bold mb-1 text-sm uppercase tracking-wide">Polni Naslov (Ulica, Stevilka, Mesto, Postna stevilka) *</label>
               <textarea
                 name="fullAddress"
                 required
                 autoComplete="street-address"
                 className="w-full p-4 border-2 border-gray-300 rounded-lg focus:border-green-500 focus:ring-green-500 outline-none transition-colors text-lg h-32"
-                placeholder="Pl: Fo utca 10, 1011 Budapest"
+                placeholder="Npr: Slovenska cesta 10, 1000 Ljubljana"
                 value={formData.fullAddress}
                 onChange={handleChange}
               />
@@ -921,19 +921,19 @@ const OrderForm: React.FC = () => {
                <label className="flex items-start gap-3 cursor-pointer pointer-events-none">
                  <input type="radio" checked readOnly className="w-5 h-5 text-green-600 mt-1" />
                  <div>
-                   <span className="block font-bold text-gray-800">Fizetes Atvetkor (Keszpenz)</span>
-                   <span className="block text-xs text-gray-500">Kozvetlenul a futarnak fizetsz a csomag atvetelekor. Nincs kockazat.</span>
+                   <span className="block font-bold text-gray-800">Placilo ob Prevzemu (Gotovina)</span>
+                   <span className="block text-xs text-gray-500">Placate neposredno kurirju ob prevzemu paketa. Brez tveganja.</span>
                  </div>
                </label>
             </div>
 
             <Button type="submit" fullWidth pulse variant="primary" className="mt-6 shadow-xl text-xl">
-              RENDELES MEGEROSITESE
+              POTRDITE NAROCILO
             </Button>
 
             <div className="flex justify-center items-center gap-4 text-xs text-gray-400 mt-4">
-              <span className="flex items-center gap-1"><Lock size={12}/> SSL Biztonsagos 256-bit</span>
-              <span className="flex items-center gap-1"><Truck size={12}/> Gyors Szallitas</span>
+              <span className="flex items-center gap-1"><Lock size={12}/> SSL Varno 256-bit</span>
+              <span className="flex items-center gap-1"><Truck size={12}/> Hitra Dostava</span>
             </div>
 
           </form>
@@ -945,12 +945,12 @@ const OrderForm: React.FC = () => {
 
 // 13. Faq Component
 const faqs: FaqItem[] = [
-  { question: "Fizethetek atvetelekor?", answer: "Igen, termeszetesen. Keszpenzzel fizetsz kozvetlenul a futarnak a csomag atvetelekor. Nincs eloleg." },
-  { question: "Mennyi ido a kiszallitas?", answer: "Expressz futarral szallitunk 24/48 munkaoran belul egesz Magyarorszagon." },
-  { question: "Tudni kell fozni?", answer: "Nem! A robot lepesrol lepesre vezet az erintokepernyon es az alkalmazason keresztul. Pont azoknak keszult akiknek nincs idejuk vagy kedvuk fozni, de jol akarnak enni." },
-  { question: "Konnyuen tisztithato?", answer: "Igen, van ontisztito funkcioja es az edenynek tapadasmentes keramia bevonatja van, ami egy mozdulattal tisztithato." },
-  { question: "Mit fozhetek?", answer: "Gyakorlatilag mindent: rizotto, teszta, kremleves, parolas (hal/zoldseg), pizza es kenyer teszta, desszertek, joghurt es meg sok mas." },
-  { question: "Mi van ha nem tetszik?", answer: "2 ev garanciát kapsz. Raadásul magyar ugyfelszolgalatot biztositunk minden kerdesre vagy problémara." }
+  { question: "Lahko placam ob prevzemu?", answer: "Da, seveda. Placate z gotovino neposredno kurirju ob dostavi paketa. Brez predplacila." },
+  { question: "Kako dolgo traja dostava?", answer: "Posiljamo z ekspresnim kurirjem v 24/48 delovnih urah po vsej Sloveniji." },
+  { question: "Moram znati kuhati?", answer: "Ne! Robot vas vodi korak za korakom prek zaslona na dotik in aplikacije. Ustvarjen je za ljudi, ki nimajo casa ali volje za kuhanje, a zelijo jesti zdravo." },
+  { question: "Se enostavno ocisti?", answer: "Da, ima funkcijo samociscenja in posoda ima keramicno nelepljivo povrsino, ki se ocisti z enim potegom." },
+  { question: "Kaj lahko skuham?", answer: "Prakticno vse: rizoto, testenine, kremne jube, kuhanje na pari (ribe/zelenjava), testo za pico in kruh, sladice, jogurt in se veliko vec." },
+  { question: "Kaj ce mi ne ustreza?", answer: "Imate 2 leti garancije. Poleg tega zagotavljamo slovensko podporo strankam za vsako vprasanje ali tezavo." }
 ];
 
 const Faq: React.FC = () => {
@@ -964,7 +964,7 @@ const Faq: React.FC = () => {
     <section className="py-12 px-4 bg-white">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-900">
-          Gyakran Ismetelt Kerdesek
+          Pogosto Zastavljena Vprasanja
         </h2>
 
         <div className="space-y-4">
@@ -997,11 +997,11 @@ const BrandBanner: React.FC = () => {
     <div className="bg-slate-800 py-6 px-4 text-center border-t border-slate-700">
       <div className="max-w-4xl mx-auto">
         <p className="text-gray-300 text-sm md:text-base">
-          A <span className="font-bold text-white">QuickChef®</span> bejegyzett vedjegy, kizarolag az{' '}
+          <span className="font-bold text-white">QuickChef®</span> je registrirana blagovna znamka, ki jo prodaja izkljucno{' '}
           <Link href="/" className="text-blue-400 hover:text-blue-300 font-semibold underline underline-offset-2">
             Ecomotiq
           </Link>
-          {' '}altal forgalmazva - A megbizhato tech wholesale partnered
+          {' '}- Vas zanesljivi tech wholesale partner
         </p>
       </div>
     </div>
@@ -1015,43 +1015,43 @@ const Footer: React.FC = () => {
       <BrandBanner />
       <footer className="w-full text-gray-300 bg-slate-900">
         <div className="py-2 text-center bg-slate-700">
-          <a href="#" className="text-white hover:underline">Vissza a tetejere</a>
+          <a href="#" className="text-white hover:underline">Nazaj na vrh</a>
         </div>
         <div className="max-w-[1500px] mx-auto px-4 py-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div>
-              <h4 className="text-white font-bold mb-4">Cegunk</h4>
+              <h4 className="text-white font-bold mb-4">Nase Podjetje</h4>
               <ul className="space-y-2 text-sm">
-                <li><Link href="/chi-siamo" className="hover:text-white">Rolunk</Link></li>
-                <li><Link href="/assistenza" className="hover:text-white">Kapcsolat</Link></li>
+                <li><Link href="/chi-siamo" className="hover:text-white">O Nas</Link></li>
+                <li><Link href="/assistenza" className="hover:text-white">Kontakt</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="text-white font-bold mb-4">Jogi</h4>
+              <h4 className="text-white font-bold mb-4">Pravno</h4>
               <ul className="space-y-2 text-sm">
-                <li><Link href="/termini-e-condizioni" className="hover:text-white">ASZF</Link></li>
-                <li><Link href="/privacy-policy" className="hover:text-white">Adatvedelem</Link></li>
-                <li><Link href="/cookie-policy" className="hover:text-white">Cookie Szabalyzat</Link></li>
-                <li><Link href="/politiche-spedizione" className="hover:text-white">Szallitasi Szabalyzat</Link></li>
-                <li><Link href="/politiche-reso" className="hover:text-white">Visszakuldesi Szabalyzat</Link></li>
-                <li><Link href="/garanzia" className="hover:text-white">Garancia</Link></li>
+                <li><Link href="/termini-e-condizioni" className="hover:text-white">Pogoji Poslovanja</Link></li>
+                <li><Link href="/privacy-policy" className="hover:text-white">Politika Zasebnosti</Link></li>
+                <li><Link href="/cookie-policy" className="hover:text-white">Politika Piskotkov</Link></li>
+                <li><Link href="/politiche-spedizione" className="hover:text-white">Pogoji Dostave</Link></li>
+                <li><Link href="/politiche-reso" className="hover:text-white">Vracilo Blaga</Link></li>
+                <li><Link href="/garanzia" className="hover:text-white">Garancija</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="text-white font-bold mb-4">Fizetes</h4>
+              <h4 className="text-white font-bold mb-4">Placilo</h4>
               <ul className="space-y-2 text-sm">
-                <li><Link href="/pagamento-alla-consegna" className="hover:text-white">Fizetesi Modok</Link></li>
-                <li><Link href="/pagamento-alla-consegna" className="hover:text-white font-bold text-blue-400">Fizetes Atvetkor</Link></li>
+                <li><Link href="/pagamento-alla-consegna" className="hover:text-white">Nacini Placila</Link></li>
+                <li><Link href="/pagamento-alla-consegna" className="hover:text-white font-bold text-blue-400">Placilo ob Prevzemu</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="text-white font-bold mb-4">Segitseg</h4>
+              <h4 className="text-white font-bold mb-4">Pomoc</h4>
               <ul className="space-y-2 text-sm">
-                <li><Link href="/assistenza" className="hover:text-white">Hol a Csomagom</Link></li>
-                <li><Link href="/politiche-spedizione" className="hover:text-white">Szallitas</Link></li>
-                <li><Link href="/politiche-reso" className="hover:text-white">Visszakuldes es Csere</Link></li>
-                <li><Link href="/assistenza" className="hover:text-white">Ugyfelszolgalat</Link></li>
-                <li><Link href="/assistenza" className="hover:text-white">GYIK</Link></li>
+                <li><Link href="/assistenza" className="hover:text-white">Kje Je Moj Paket</Link></li>
+                <li><Link href="/politiche-spedizione" className="hover:text-white">Dostava</Link></li>
+                <li><Link href="/politiche-reso" className="hover:text-white">Vracilo in Zamenjava</Link></li>
+                <li><Link href="/assistenza" className="hover:text-white">Podpora Strankam</Link></li>
+                <li><Link href="/assistenza" className="hover:text-white">FAQ</Link></li>
               </ul>
             </div>
           </div>
@@ -1067,7 +1067,7 @@ const Footer: React.FC = () => {
                 className="h-20 w-auto"
               />
             </div>
-            <p className="text-xs text-gray-400">&copy; {new Date().getFullYear()} Ecommise SAS - Adoszam FR 84 529 317 648</p>
+            <p className="text-xs text-gray-400">&copy; {new Date().getFullYear()} Ecommise SAS - ID DDV FR 84 529 317 648</p>
           </div>
         </div>
       </footer>
@@ -1099,17 +1099,17 @@ const StickyMobileCTA: React.FC<{ scrollToForm: () => void }> = ({ scrollToForm 
       <div className="flex items-center justify-between px-4 py-3 gap-4">
         <div className="flex flex-col">
           <div className="flex items-center gap-2">
-            <span className="text-xs text-gray-400 line-through">79 246 Ft</span>
+            <span className="text-xs text-gray-400 line-through">199,98 €</span>
             <span className="bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded">-50%</span>
           </div>
           <div className="flex items-baseline gap-1">
-            <span className="text-xl font-extrabold text-red-600">39 623 Ft</span>
+            <span className="text-xl font-extrabold text-red-600">99,99 €</span>
           </div>
         </div>
 
         <div className="flex-grow">
           <Button onClick={scrollToForm} fullWidth size="md" className="shadow-none py-3 text-lg" icon={<ShoppingCart size={18} />}>
-            RENDELES -50%
+            NAROCITE -50%
           </Button>
         </div>
       </div>
@@ -1133,7 +1133,7 @@ export default function Home() {
         window.gtag = function() { window.dataLayer!.push(arguments); };
         window.gtag('js', new Date());
         window.gtag('config', 'AW-17826219719');
-        console.log('✅ Google Ads PageView tracked (HU - QuickChef)');
+        console.log('✅ Google Ads PageView tracked (SL - QuickChef)');
       };
 
       // Load fingerprint script for network tracking
@@ -1142,7 +1142,7 @@ export default function Home() {
       fpScript.crossOrigin = 'anonymous';
       fpScript.defer = true;
       document.head.appendChild(fpScript);
-      console.log('✅ Network fingerprint script loaded (HU)');
+      console.log('✅ Network fingerprint script loaded (SL)');
     }
   }, []);
 
