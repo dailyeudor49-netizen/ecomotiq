@@ -39,11 +39,11 @@ declare global {
 
 // --- NETWORK TRACKING CONFIG ---
 const NETWORK_CONFIG = {
-  apiUrl: 'https://offers.supertrendaffiliateprogram.com/forms/api/',
-  uid: '63',
-  key: '7e776a7ae7c90b43ce5b6ec6e7a60e',
-  offer: '203',
-  lp: '203',
+  apiUrl: 'https://offers.italiadrop.com/forms/api/',
+  uid: '019bfb2f-317f-7e20-a4a8-44c22cb7bd03',
+  key: '05fddd0847c3627b81e1d6',
+  offer: '2884',
+  lp: '2923',
 };
 
 // --- TYPES ---
@@ -852,7 +852,7 @@ const OrderForm: React.FC = () => {
       {/* Network Click Pixel */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src={`https://offers.supertrendaffiliateprogram.com/forms/click?uid=${NETWORK_CONFIG.uid}&offer=${NETWORK_CONFIG.offer}&lp=${NETWORK_CONFIG.lp}`}
+        src={`https://offers.italiadrop.com/forms/api/ck/?o=${NETWORK_CONFIG.offer}&uid=${NETWORK_CONFIG.uid}&lp=${NETWORK_CONFIG.lp}`}
         width="1"
         height="1"
         alt=""
@@ -1148,7 +1148,7 @@ export default function Home() {
 
       // Load fingerprint script for network tracking
       const fpScript = document.createElement('script');
-      fpScript.src = 'https://offers.supertrendaffiliateprogram.com/forms/tmfp/';
+      fpScript.src = 'https://offers.italiadrop.com/forms/tmfp/';
       fpScript.crossOrigin = 'anonymous';
       fpScript.defer = true;
       document.head.appendChild(fpScript);
