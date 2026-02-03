@@ -770,6 +770,16 @@ const OrderForm: React.FC = () => {
     sessionStorage.removeItem('conversionTracked');
     sessionStorage.removeItem('networkResponse');
 
+    // Track Google Ads Conversion
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'conversion', {
+        'send_to': 'AW-17218323030/uAjLCLyn-_EbENaEq5JA',
+        'value': 99.99,
+        'currency': 'EUR'
+      });
+      console.log('✅ Google Ads Conversion tracked (SK - QuickChef)');
+    }
+
     // Send data to network API
     try {
       const apiFormData = new FormData();
@@ -1125,14 +1135,14 @@ export default function Home() {
     if (typeof window !== 'undefined') {
       const script = document.createElement('script');
       script.async = true;
-      script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-17826219719';
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-17218323030';
       document.head.appendChild(script);
 
       script.onload = () => {
         window.dataLayer = window.dataLayer || [];
         window.gtag = function() { window.dataLayer!.push(arguments); };
         window.gtag('js', new Date());
-        window.gtag('config', 'AW-17826219719');
+        window.gtag('config', 'AW-17218323030');
         console.log('✅ Google Ads PageView tracked (SK - QuickChef)');
       };
 
