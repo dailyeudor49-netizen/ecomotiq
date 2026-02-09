@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { 
@@ -26,6 +26,7 @@ import {
   ChevronDown, 
   ChevronUp
 } from 'lucide-react';
+import { validateForm } from '@/app/utils/formValidation';
 
 // --- TYPES ---
 
@@ -719,6 +720,7 @@ const OrderForm: React.FC = () => {
     fullAddress: '', 
   });
   const [submitted, setSubmitted] = useState(false);
+  const pageLoadTime = useRef(Date.now());
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -726,6 +728,20 @@ const OrderForm: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    const validation = validateForm({
+      name: formData.firstName,
+      phone: formData.phone,
+      address: formData.fullAddress,
+      countryCode: 'IT',
+      productKey: 'quickchef_it',
+      pageLoadTime: pageLoadTime.current,
+    });
+    if (!validation.isValid) {
+      alert(validation.error);
+      return;
+    }
+
     setSubmitted(true);
     const formElement = document.getElementById('order-form');
     if (formElement) formElement.scrollIntoView({ behavior: 'smooth' });

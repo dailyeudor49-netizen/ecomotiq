@@ -1,9 +1,10 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
+import { validateForm } from '@/app/utils/formValidation';
 import {
   Truck,
   ShieldCheck,
@@ -739,6 +740,7 @@ const OrderForm: React.FC = () => {
     fullAddress: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const pageLoadTime = useRef(Date.now());
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -746,6 +748,20 @@ const OrderForm: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    const validation = validateForm({
+      name: formData.firstName,
+      phone: formData.phone,
+      address: formData.fullAddress,
+      countryCode: 'ES',
+      productKey: 'quickchef_es',
+      pageLoadTime: pageLoadTime.current,
+    });
+    if (!validation.isValid) {
+      alert(validation.error);
+      return;
+    }
+
     setIsSubmitting(true);
 
     // Save Enhanced Conversions data to sessionStorage
