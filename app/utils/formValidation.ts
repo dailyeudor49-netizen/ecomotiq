@@ -230,13 +230,8 @@ export function validateForm(params: {
   if (/\d/.test(trimmedName)) {
     return { isValid: false, error: msg.nameNoNumbers };
   }
-  // Must have at least 2 words
-  const nameParts = trimmedName.split(/\s+/).filter(p => p.length > 0);
-  if (nameParts.length < 2) {
-    return { isValid: false, error: msg.nameTwoWords };
-  }
-  // Each word must have at least 2 characters
-  if (nameParts.some(p => p.length < 2)) {
+  // Minimum 2 characters
+  if (trimmedName.length < 2) {
     return { isValid: false, error: msg.nameMinChars };
   }
   // Block keyboard sequences
@@ -260,7 +255,7 @@ export function validateForm(params: {
   }
 
   // === ADDRESS VALIDATION ===
-  if (address.trim().length < 8) {
+  if (address.trim().length < 5) {
     return { isValid: false, error: msg.addressShort };
   }
 
